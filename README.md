@@ -22,7 +22,7 @@ A Java project to explore the capabilities of the **Jackson library**, including
 
 1. Clone this repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rvguradiya/jackson-explorer.git
    ```
 2. Navigate to the project directory:
     ```bash
@@ -41,8 +41,8 @@ A Java project to explore the capabilities of the **Jackson library**, including
    
 2. Navigate to the project directory:
    ```bash
-   mvn package
-   java -cp target/jackson-explorer-1.0-SNAPSHOT.jar com.practice.App
+   mvn clean dependency:copy-dependencies package 
+   java -cp target/jackson-explorer-1.0-SNAPSHOT.jar:target/dependency/* com.practice.App
    ```
 
 ## Key Features
